@@ -18,16 +18,18 @@ from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
 from gensim.models import Word2Vec
 from wordcloud import WordCloud
 
-# ---------------- NLTK DOWNLOADS ----------------
+# ---------------- NLTK DOWNLOADS ------------
 import nltk
 
 nltk.download("punkt")
-nltk.download("punkt_tab")   # 🔥 THIS LINE FIXES YOUR ERROR
+nltk.download("punkt_tab")
 nltk.download("stopwords")
 nltk.download("wordnet")
 nltk.download("averaged_perceptron_tagger")
+nltk.download("averaged_perceptron_tagger_eng")  # 🔥 FIX
 nltk.download("maxent_ne_chunker")
 nltk.download("words")
+
 
 
 # ---------------- PAGE CONFIG ----------------
@@ -273,6 +275,7 @@ st.markdown("---")
 st.caption(
     "LinguaLab | Tokenization • Stemming • Lemmatization • NLP Visualization"
 )
+
 
 
 
