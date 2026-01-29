@@ -26,9 +26,11 @@ nltk.download("punkt_tab")
 nltk.download("stopwords")
 nltk.download("wordnet")
 nltk.download("averaged_perceptron_tagger")
-nltk.download("averaged_perceptron_tagger_eng")  # 🔥 FIX
+nltk.download("averaged_perceptron_tagger_eng")
 nltk.download("maxent_ne_chunker")
+nltk.download("maxent_ne_chunker_tab")   # 
 nltk.download("words")
+
 
 
 
@@ -275,6 +277,7 @@ st.markdown("---")
 st.caption(
     "LinguaLab | Tokenization • Stemming • Lemmatization • NLP Visualization"
 )
+
 
 
 
