@@ -19,12 +19,16 @@ from gensim.models import Word2Vec
 from wordcloud import WordCloud
 
 # ---------------- NLTK DOWNLOADS ----------------
+import nltk
+
 nltk.download("punkt")
+nltk.download("punkt_tab")   # 🔥 THIS LINE FIXES YOUR ERROR
 nltk.download("stopwords")
 nltk.download("wordnet")
 nltk.download("averaged_perceptron_tagger")
 nltk.download("maxent_ne_chunker")
 nltk.download("words")
+
 
 # ---------------- PAGE CONFIG ----------------
 st.set_page_config(
@@ -269,6 +273,7 @@ st.markdown("---")
 st.caption(
     "LinguaLab | Tokenization • Stemming • Lemmatization • NLP Visualization"
 )
+
 
 
 
